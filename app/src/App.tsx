@@ -1,6 +1,6 @@
 
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Nav } from "./components/Outline";
 import { Home } from "./components/Home";
 import { Test } from "./components/Test";
@@ -15,6 +15,7 @@ function App() {
         <Route index element={<Home/>}/>
         <Route path="test" element={<Test/>}/>
         <Route path="about" element={<About/>}/>
+        <Route path="about-us" element={<Navigate to="/about" replace />}/>
         <Route path="*" element={<ErrorPage/>}/>
 
       </Route>
