@@ -23,5 +23,9 @@ function getRandom<T>(items: T[]): T {
 }
 
 const el1 = getRandom([1,2,3,4])
-const el2 = getRandom(["1","2",3,4])
-console.log(typeof el2)
+
+function getValue<T extends {id: number}>(item: T){
+    return item.id
+}
+
+getValue({id: 4})
