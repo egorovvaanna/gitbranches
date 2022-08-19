@@ -1,0 +1,58 @@
+
+
+a {
+  color: wheat;
+}
+.active {
+  color: aqua;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header {
+  background-color: #282c34;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  padding: 40px;
+  flex: 0 0 auto;
+}
+.main{
+  flex: 1 0 auto;
+  display: block;
+}
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #282c34;
+  color: wheat;
+  flex: 0 0 auto;
+}
+
+.foo{
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.actor{
+  margin-bottom: 10px;
+  border: 1px solid;
+  width: 300px;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.actor:hover{
+  background-color: bisque;
+}
