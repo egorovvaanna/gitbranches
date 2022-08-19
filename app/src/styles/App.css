@@ -50,6 +50,8 @@ a {
   padding: 10px;
   transition: all 0.3s ease;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 .actor:hover{
   background-color: bisque;

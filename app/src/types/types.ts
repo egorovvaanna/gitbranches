@@ -27,3 +27,18 @@ export interface PeopleAll {
     }
   };
 }
+
+export interface ActorType{
+  person: {
+
+    id: string;
+    name: string;
+    gender: string;
+    filmConnection: {
+      id: string;
+      title: string;
+      director: string;
+      releaseDate: string
+    }
+  }
+}

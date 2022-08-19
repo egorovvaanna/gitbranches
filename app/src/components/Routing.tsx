@@ -9,6 +9,7 @@ import { ErrorPage } from "./Pages/ErrorPage";
 import { About1 } from "./Pages/About1";
 import { About2 } from "./Pages/About2";
 import { About3 } from "./Pages/About3";
+import { Actor } from './Pages/Actor';
 
 export const Routing: FC = () => {
   return (
@@ -16,6 +17,7 @@ export const Routing: FC = () => {
       <Route path="/" element={<Nav />}>
         <Route index element={<Home />} />
         <Route path="test" element={<Test />} />
+        <Route path="actor/:id" element={<Actor />} />
         <Route path="about/" element={<About />}>
           <Route index element={<About1 />} />
           <Route path="2" element={<About2 />} />

@@ -26,10 +26,19 @@ export const GET_CHARACTERS = gql`
   }
 `;
 
-export const GET_FILM = gql`
-  query GetFilm($filmID: ID!) {
-    film(filmID: $filmID) {
-      title
+export const GET_ACTOR = gql`
+  query GetActor($id: ID!) {
+    person(id: $id) {
+      name
+      gender
+      id
+      filmConnection {
+        films {
+          title
+          director
+          releaseDate
+        }
+      }
     }
   }
 `;
