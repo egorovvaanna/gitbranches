@@ -2,7 +2,7 @@ import { FC } from "react";
 
 export const Footer:FC=()=>{
     return(
-        <div className="footer">
+        <div >
             some info into footer
         </div>
     )
